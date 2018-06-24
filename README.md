@@ -29,4 +29,5 @@ analysed the dependencies in a huge project ([Cardano-SL](https://github.com/inp
 this project contains more than 20 modules.
 
 the CSV data have been loaded into a LibreOffice [calc sheet](module_dependencies.ods) for visualisation.
+![example](module_dependencies.png)
 
