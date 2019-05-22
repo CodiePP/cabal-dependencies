@@ -8,7 +8,7 @@ import Control.Monad (forM)
 
 import Data.List (nub, sort)
 
-import Distribution.PackageDescription.Parse
+import Distribution.PackageDescription.Parsec
 import Distribution.PackageDescription
 import Distribution.Verbosity
 import Distribution.Package
@@ -16,7 +16,7 @@ import Distribution.Package
 
 parse :: String -> IO (String, [String])
 parse fp = do
-  d <- readPackageDescription normal fp
+  d <- readGenericPackageDescription normal fp
   -- extract name of cabal package
   let n = unPackageName $ pkgName . package $ packageDescription d
   return $ (n, nub {-. sort-} $ parseLib d
