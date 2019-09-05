@@ -6,9 +6,17 @@ direct dependencies are labelled "1", and transitive dependencies "2".
 
 ## extraction
 
+### using `stack`
+
 > stack build
 
 > stack exec cabal-dependencies-exe ../my-other-project/project.cabal  > dependencies.pl
+
+### using `cabal`
+
+> cabal new-build
+
+> cabal new-run cabal-dependencies-exe ../my-other-project/project.cabal  > dependencies.pl
 
 ## analysis
 
