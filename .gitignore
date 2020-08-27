@@ -1,2 +1,8 @@
 .stack-work/
+dist-newstyle/
+dist/
 *~
+stack.yaml.lock
+dependencies.pl
+dependencies.ods
+dependencies.csv
